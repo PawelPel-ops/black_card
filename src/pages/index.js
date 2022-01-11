@@ -7,7 +7,6 @@ const Home = () => {
         <>
             <Nav />
             <Hero />
-            <p>pages element</p>
         </>
     )
 }
