@@ -7,10 +7,14 @@ export const NavSection = styled.section`
     left: 0;
     width: 100%;
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 export const NavContainer = styled.div`
     max-width: 1300px;
+    width: 100%;
 `
 
 export const NavContent = styled.div`
