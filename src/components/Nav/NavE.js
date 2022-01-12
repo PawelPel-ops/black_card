@@ -10,6 +10,7 @@ export const NavSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 `
 
 export const NavContainer = styled.div`
@@ -28,6 +29,7 @@ export const WrapperLogo = styled.div`
 `
 
 export const Logo = styled.p`
+    font-size: 1.6rem;
     padding: 10px;
 `
 
@@ -44,6 +46,50 @@ export const WrapperLink = styled.li`
     padding: 0 20px;
     cursor: pointer;
     margin: auto 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+        color: #2d909b;
+        transform: scale(1.1);
+    }
+
+    &:before {
+        content:"";
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        width: 0;
+        height: 1.5px;
+        transition: all .35s ease-in-out;
+    }
+    
+    &:hover {
+        &:before {
+            width: 40%;
+            background-color: #2d909b;
+        }
+    }
+    
+    &:after {
+        content:"";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 0;
+        height: 1.5px;
+        transition: all .35s ease-in-out;
+    }
+    
+    &:hover {
+        &:after {
+            width: 40%;
+            background-color: #2d909b;
+        }
+    }
 `
 
-export const LinkScroll = styled(LinkS)``
+export const LinkScroll = styled(LinkS)`
+    font-size: 1.6rem;
+`

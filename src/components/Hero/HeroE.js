@@ -68,6 +68,7 @@ export const SmallHeader = styled.h2`
 
 export const BigHeader = styled.h3`
     font-size: 3.2rem;
+    margin: 10px 0 30px;
 `
 
 export const DescriptionHero = styled.p`
@@ -75,11 +76,47 @@ export const DescriptionHero = styled.p`
 `
 
 export const BtnBox = styled.div`
+    position: relative;
+    background: rgba(0,0,0,.1);
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 60px 0;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px 1px rgba(0,0,0,.6);
 
+    &:hover .btnLink {
+        transform: scale(1.1);
+        transition: 0.25s;
+    }
+
+    &:hover .btnBackground {
+        width: 100%;
+        transition: 0.25s;
+    }
+`
+
+export const BtnBackground = styled.div`
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 10%;
+   height: 100%;
+   background: #ada9bb;
+   z-index: -1;
+`
+
+export const Btn = styled.div`
+    
 `
 
 export const LinkScroll = styled(Link)`
-
+    font-size: 1.6rem;
+    letter-spacing: 1px;
 `
 
 export const WrapperCard = styled.div`
@@ -101,6 +138,12 @@ export const Card = styled.div`
     overflow: hidden;
     box-shadow: 5px 5px 10px 3px rgba(0,0,0,.5);
     transform: rotate(-15deg);
+    cursor: pointer;
+
+    &:hover {
+        transform: rotate(5deg);
+        transition: all .25s ease-in-out;
+    }
 
     &::before {
         content: '';

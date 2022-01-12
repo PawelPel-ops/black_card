@@ -8,6 +8,8 @@ import {
     BigHeader,
     DescriptionHero,
     BtnBox,
+    Btn,
+    BtnBackground,
     LinkScroll,
     WrapperCard,
     Card,
@@ -38,7 +40,10 @@ const Hero = () => {
                             <BigHeader>Do aliqua pariatur eiusmod anim eu aliquip amet</BigHeader>
                             <DescriptionHero>Lorem consequat officia enim dolore consectetur tempor nostrud eu nisi veniam incididunt. Id fugiat aliquip pariatur cupidatat id veniam enim commodo.</DescriptionHero>
                             <BtnBox>
-                                <LinkScroll to='/'>Contact Us</LinkScroll>
+                                <BtnBackground className='btnBackground'/>
+                                <Btn className='btnLink'>
+                                    <LinkScroll to='/'>Contact Us</LinkScroll>
+                                </Btn>
                             </BtnBox>
                         </WrapperText>
                         <WrapperCard>
