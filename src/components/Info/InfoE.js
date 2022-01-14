@@ -45,7 +45,7 @@ export const InfoContent = styled.div`
     position: relative;
     z-index: 2;
     height: 80%;
-    width: 100%;
+    width: 90%;
     background-color: rgba(255,255,255,.1);
     padding: 50px;
     box-shadow: 20px 20px 20px rgba(0,0,0,.6);

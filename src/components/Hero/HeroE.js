@@ -45,7 +45,7 @@ export const HeroContent = styled.div`
     color: #2c283d;
     position: relative;
     z-index: 2;
-    height: 80vh;
+    height: 75vh;
     width: 100%;
     background-color: rgba(255,255,255,.1);
     padding: 50px;
