@@ -3,7 +3,7 @@ import Nav from '../components/Nav'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Info from '../components/Info'
-import { infoObjOne, infoObjTwo } from '../components/Info/InfoData'
+import Quote from '../components/Quote'
 
 const Home = () => {
     return (
@@ -11,9 +11,8 @@ const Home = () => {
             <Nav />
             <Hero />
             <About />
-            {/* <Info {...infoObjOne} />
-            <Info {...infoObjTwo} /> */}
             <Info />
+            <Quote />
         </>
     )
 }

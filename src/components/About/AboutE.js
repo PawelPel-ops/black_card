@@ -41,6 +41,7 @@ export const IconsWrapper = styled.div`
 export const IconBox = styled.div`
     position: relative;
     margin: 10px;
+    max-width: 150px;
 
     &::after {
         content: '';
@@ -79,9 +80,11 @@ export const BackgroundBox = styled.div`
     border-left: 1px solid rgba(255,255,255,.5);
     backdrop-filter: blur(10px);
     cursor: pointer;
+    min-height: 150px;
 `
 
 export const Description = styled.span`
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 10px;
 `
