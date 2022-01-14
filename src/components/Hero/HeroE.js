@@ -9,7 +9,6 @@ export const HeroSection = styled.section`
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
 
     &::after {
         content: '';
@@ -29,7 +28,7 @@ export const HeroSection = styled.section`
         width: 29vw;
         height: 29vw;
         top: 2vw;
-        right: -5vw;
+        right: 0;
         background: #54786d;
         border-radius: 50%;
         z-index: 1;

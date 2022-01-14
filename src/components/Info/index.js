@@ -13,7 +13,11 @@ import {
     TextWrapper,
     Border,
     Text,
-    Description
+    Description,
+    BtnBox,
+    BtnBackground,
+    Btn,
+    LinkScroll
 } from './InfoE'
 import { infoDatas } from './InfoData'
 
@@ -37,14 +41,20 @@ const Info = () => {
                                 {obj.details.map((item, index) => {
                                     return (
                                     <ContentWrapper key={index}>
-                                        <TextWrapper onClick={() => setSelectedDes(item.id)}>
-                                            <Border>{selectedDes === item.id ? '-' : '+'}</Border>
+                                        <TextWrapper>
+                                            <Border onClick={() => setSelectedDes(item.id)} className={selectedDes === item.id ? 'active' : ''}>{selectedDes === item.id ? '-' : '+'}</Border>
                                             <Text>{item.header}</Text>
                                         </TextWrapper>
                                         { selectedDes === item.id && <Description>{item.des}</Description> }
                                     </ContentWrapper> 
                                     )
                                 })}
+                                <BtnBox>
+                                    <BtnBackground className='btnBackground'/>
+                                    <Btn className='btnLink'>
+                                        <LinkScroll to='/'>Contact Us</LinkScroll>
+                                    </Btn>
+                                </BtnBox>
                             </InfoColumn2>
                         </InfoRow>
                     </InfoContent> 
