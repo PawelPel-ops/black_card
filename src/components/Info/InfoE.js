@@ -54,7 +54,6 @@ export const InfoContent = styled.div`
     border-left: 1px solid rgba(255,255,255,.5);
     backdrop-filter: blur(10px);
     margin: 100px 50px;
-    color: #2c283d;
 `
 
 export const InfoRow = styled.div`
