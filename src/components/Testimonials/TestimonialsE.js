@@ -14,50 +14,161 @@ export const TestimonialsSection = styled.section`
         width: 20vw;
         height: 20vw;
         bottom: 0;
-        left: 5vw;
+        right: 10%;
         background: #2c283d;
         border-radius: 50%;
         z-index: 1;
     }
 
-    // &::before {
-    //     content: '';
-    //     position: absolute;
-    //     width: 30vw;
-    //     height: 30vw;
-    //     top: 2vw;
-    //     right: 5vw;
-    //     background: #2d909b;
-    //     border-radius: 50%;
-    //     z-index: 1;
-    // }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        top: 8%;
+        left: 15%;
+        background: #54786d;
+        border-radius: 50%;
+        z-index: 1;
+    }
 `
 
 export const TestimonialsContainer = styled.div`
     max-width: 1300px;
     width: 100%;
-    height: 900px;
+    // height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 `
 
 export const TestimonialsContent = styled.div`
     margin: 100px 50px;
     position: relative;
     z-index: 2;
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 `
 
 export const TestimonialsHeader = styled.h2`
     font-size: 3.2rem;
 `
 
-export const CarouselBox = styled.div`
-    display: flex;
+export const BtnPrev = styled.div`
     position: absolute;
-    top: 0;
-    left: -500px;
+    // top: 50%;
+    bottom: -40px;
+    right: 30%;
+    // transform: translateY(-50%);
+    // right: -80px;
+    cursor: pointer;
+    z-index: 2;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 30px;
+        border-radius: 5px;
+        background: #2d909b;
+        z-index: 1;
+    }
+
+    &:hover::after {
+        left: 1px;
+        width: 85%;
+        height: 85%;
+        transition: 0.25s;
+    }
+
+    &:hover .prevArrow {
+        transform: scale(1.4) rotate(45deg);
+        transition: 0.25s ease;
+    }
+`
+
+export const ArrowBox = styled.div`
+    font-size: 3.2rem;
+    background-color: rgba(255,255,255,.1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,.6);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-left: 1px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    position: relative;
+    z-index: 5;
+`
+
+export const PrevArrow = styled.div`
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid rgba(0,0,0,.4);
+    border-right: 2px solid rgba(0,0,0,.4);
+    transform: rotate(45deg);
+    position: relative;
+    }
+`
+
+export const BtnNext = styled.div`
+    position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    bottom: -40px;
+    left: 30%;
+    // left: -80px;
+    cursor: pointer;
+    z-index: 2;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 30px;
+        border-radius: 5px;
+        background: #2d909b;
+        z-index: 1;
+    }
+
+    &:hover::after {
+        left: 1px;
+        width: 85%;
+        height: 85%;
+        transition: 0.25s;
+    }
+
+    &:hover .nextArrow {
+        transform: scale(1.4) rotate(-45deg);
+        transition: 0.25s ease;
+    }
+`
+
+export const NextArrow = styled.div`
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid rgba(0,0,0,.4);
+    border-left: 2px solid rgba(0,0,0,.4);
+    transform: rotate(-45deg);
+`
+
+export const CarouselBox = styled.div`
+    max-width: 500px;
+    width: 90vw;
+    position: relative;
+    // overflow: hidden;
+`
+
+export const Carousel = styled.div`
+    display: flex;
+    transition: transform 0.3s ease;
 `
 
 export const TestimonialWrapper = styled.div`
@@ -69,12 +180,12 @@ export const TestimonialWrapper = styled.div`
     border-top: 1px solid rgba(255,255,255,.5);
     border-left: 1px solid rgba(255,255,255,.5);
     backdrop-filter: blur(10px);
-    width: 400px;
-    // height: ;
-    margin: 50px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
+    max-width: 400px;
+    margin: 50px 100px;
+
+    &:first-child{
+        margin-left: 50px;
+    }
 `
 
 export const TBox = styled.div`
@@ -88,6 +199,7 @@ export const Testimonial = styled.p`
 export const AvBox = styled.div`
     display: flex;
     margin: 10px auto;
+    width: 400px;
 `
 
 export const Avatar = styled.div`
