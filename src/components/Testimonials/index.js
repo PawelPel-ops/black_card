@@ -24,7 +24,7 @@ import { AllTestimonials } from './TestimonialsData'
 const Testimonials = () => {
     const [active, setActive] = useState(0);
 
-    const handleNext = () => {
+    const handlePrev = () => {
         if(active === AllTestimonials.length-1){
             setActive(0)
         } else {
@@ -32,7 +32,7 @@ const Testimonials = () => {
         }
     }
 
-    const handlePrev = () => {
+    const handleNext = () => {
         if(active === 0){
             setActive(AllTestimonials.length - 1)
         } else {
@@ -63,7 +63,7 @@ const Testimonials = () => {
                         <Carousel style={{'transform': `translateX(-${AllTestimonials[active].id*600}px)`}}>
                         {AllTestimonials.map((obj, index) => {
                             return (
-                                <TestimonialWrapper key={index}>
+                                <TestimonialWrapper key={index} className={`${obj.id === active ? 'active' : ''}`}>
                                     <TBox>
                                         <Testimonial>{obj.des}</Testimonial>
                                     </TBox>

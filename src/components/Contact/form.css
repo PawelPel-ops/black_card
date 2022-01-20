@@ -1,0 +1,76 @@
+.my__input{
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #2c283d;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 5px;
+}
+
+.my__input:focus{
+    background-color: rgba(255,255,255,.7);
+}
+
+.error{
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+.checkbox{
+    margin-right: 5px;
+}
+
+.inner{
+    margin: 5px;
+    /* padding: 5px; */
+}
+
+.accept__text{
+    font-size: 1.2rem;
+    display: inline;
+}
+
+.form__btn__box{
+    position: relative;
+    background: rgba(0,0,0,.1);
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 20px 0;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px 1px rgba(0,0,0,.6);
+}
+
+.form__btn__box:hover .form__btn__background{
+    width: 100%;
+    transition: 0.25s;
+}
+
+.form__btn__box:hover .form__btn{
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+.form__btn__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: #ada9bb;
+    z-index: -1;
+}
+
+.form__btn{
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}

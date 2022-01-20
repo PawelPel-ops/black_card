@@ -58,11 +58,8 @@ export const TestimonialsHeader = styled.h2`
 
 export const BtnPrev = styled.div`
     position: absolute;
-    // top: 50%;
     bottom: -40px;
     right: 30%;
-    // transform: translateY(-50%);
-    // right: -80px;
     cursor: pointer;
     z-index: 2;
 
@@ -117,11 +114,8 @@ export const PrevArrow = styled.div`
 
 export const BtnNext = styled.div`
     position: absolute;
-    // top: 50%;
-    // transform: translateY(-50%);
     bottom: -40px;
     left: 30%;
-    // left: -80px;
     cursor: pointer;
     z-index: 2;
 
@@ -182,6 +176,12 @@ export const TestimonialWrapper = styled.div`
     backdrop-filter: blur(10px);
     max-width: 400px;
     margin: 50px 100px;
+    opacity: 0.7;
+
+    &.active {
+        opacity: 1;
+        background-color: rgba(255,255,255,.2);
+    }
 
     &:first-child{
         margin-left: 50px;
