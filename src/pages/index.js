@@ -7,6 +7,7 @@ import Quote from '../components/Quote'
 import Offer from '../components/Offer'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Offer />
             <Testimonials />
             <Contact />
+            <Footer />
         </>
     )
 }

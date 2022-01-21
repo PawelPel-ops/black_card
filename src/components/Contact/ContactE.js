@@ -29,7 +29,7 @@ export const ContactContainer = styled.div`
 export const ContactContent = styled.div`
     display: flex;
     justify-content: space-evenly;
-    margin: 100px 50px;
+    margin: 100px 50px 200px;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -37,6 +37,7 @@ export const ContactContent = styled.div`
 
 export const Column = styled.div`
     max-width: 600px;
+    min-height: 500px;
     padding: 50px;
     color: #2c283d;
     background-color: rgba(255,255,255,.1);
