@@ -73,7 +73,7 @@ const FormElement = () => {
                             <Field className="my__input" component="textarea" name="message" type="message" placeholder="Message" rows="5" cols="70"/>
                             <div className="inner">
                                 <MyCheckbox name="acceptedTerms" />
-                                <p className="accept__text">I hereby give consent for my personal data to be processed by [company name].</p>
+                                <p className="accept__text">I hereby give consent for my personal data to be processed by CompanyName.</p>
                             </div>
                             <div className="form__btn__box">
                                 <div className="form__btn__background"/>
@@ -84,7 +84,7 @@ const FormElement = () => {
                 )}
             </Formik>
         </div>
-    )
-}
+    );
+};
 
 export default FormElement

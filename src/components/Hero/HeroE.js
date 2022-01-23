@@ -5,6 +5,7 @@ export const HeroSection = styled.section`
     background: #ada9bb;
     width: 100%;
     height: 100vh;
+    max-height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +47,7 @@ export const HeroContent = styled.div`
     position: relative;
     z-index: 2;
     height: 75vh;
+    max-height: 700px;
     width: 100%;
     background-color: rgba(255,255,255,.1);
     padding: 50px;

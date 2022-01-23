@@ -42,7 +42,14 @@ const Hero = () => {
                             <BtnBox>
                                 <BtnBackground className='btnBackground'/>
                                 <Btn className='btnLink'>
-                                    <LinkScroll to='/'>Contact Us</LinkScroll>
+                                    <LinkScroll 
+                                        to='contact' 
+                                        smooth={true} 
+                                        duration={500} 
+                                        spy='true' 
+                                        exact='true' 
+                                        offset={-58}
+                                    >Contact Us</LinkScroll>
                                 </Btn>
                             </BtnBox>
                         </WrapperText>

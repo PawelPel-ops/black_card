@@ -70,7 +70,7 @@ const Footer = () => {
                     </ContentRow>
                     <FooterLine />
                     <FooterRow>
-                        <CompanyName>[company name] © {new Date().getFullYear()} All rights reserved.</CompanyName>
+                        <CompanyName>CompanyName © {new Date().getFullYear()} All rights reserved.</CompanyName>
                         <DeveloperName>Design and implementation: <a href="https://wah.netlify.app/"  target='_blank' rel="noreferrer">Web App House</a></DeveloperName>
                     </FooterRow>
                 </FooterContent>

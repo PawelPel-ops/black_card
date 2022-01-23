@@ -11,7 +11,7 @@ export const NavSection = styled.section`
     align-items: center;
     justify-content: center;
     z-index: 999;
-    background-color: ${({ scrollNav }) => (scrollNav ? "#ada9bb" : "rgba(255,255,255,.1)")};
+    background-color: ${({ scrollNav }) => (scrollNav ? "#ada9bb" : "rgba(0,0,0,.2)")};
     box-shadow: ${({ scrollNav }) => (scrollNav ? "3px 5px 7px rgba(0,0,0,.5)" : "none")};
     transition: all 0.2s ease-in;
 `

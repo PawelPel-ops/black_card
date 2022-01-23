@@ -45,7 +45,7 @@ const Testimonials = () => {
     
 
     return (
-        <TestimonialsSection>
+        <TestimonialsSection id='testimonials'>
             <TestimonialsContainer>
                 <TestimonialsContent>
                     <TestimonialsHeader>Cillum exercitation veniam ullamco sint.</TestimonialsHeader>

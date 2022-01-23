@@ -25,7 +25,7 @@ const Info = () => {
     const [selectedDes, setSelectedDes] = useState(1)
 
     return (
-        <InfoSection>
+        <InfoSection id='offer'>
             <InfoContainer>
                 {infoDatas.map((obj, index) => {
                     return (
@@ -52,7 +52,14 @@ const Info = () => {
                                 <BtnBox>
                                     <BtnBackground className='btnBackground'/>
                                     <Btn className='btnLink'>
-                                        <LinkScroll to='/'>Contact Us</LinkScroll>
+                                        <LinkScroll
+                                            to='contact' 
+                                            smooth={true} 
+                                            duration={500} 
+                                            spy='true' 
+                                            exact='true' 
+                                            offset={-58}
+                                        >Contact Us</LinkScroll>
                                     </Btn>
                                 </BtnBox>
                             </InfoColumn2>

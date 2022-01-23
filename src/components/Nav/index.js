@@ -47,13 +47,34 @@ const Nav = () => {
                         <WrapperMenu open={open}>
                             <Menu>
                                 <WrapperLink>
-                                    <LinkScroll to='/'>Link 1</LinkScroll>
+                                    <LinkScroll
+                                        to='offer' 
+                                        smooth={true} 
+                                        duration={500} 
+                                        spy='true' 
+                                        exact='true' 
+                                        offset={-58}
+                                    >Offer</LinkScroll>
                                 </WrapperLink>
                                 <WrapperLink>
-                                    <LinkScroll to='/'>Link 2</LinkScroll>
+                                    <LinkScroll 
+                                        to='testimonials' 
+                                        smooth={true} 
+                                        duration={500} 
+                                        spy='true' 
+                                        exact='true' 
+                                        offset={-58}
+                                    >Testimonials</LinkScroll>
                                 </WrapperLink>
                                 <WrapperLink>
-                                    <LinkScroll to='/'>Link 3</LinkScroll>
+                                    <LinkScroll
+                                        to='contact' 
+                                        smooth={true} 
+                                        duration={500} 
+                                        spy='true' 
+                                        exact='true' 
+                                        offset={-58}
+                                    >Contact</LinkScroll>
                                 </WrapperLink>
                             </Menu>
                         </WrapperMenu>
