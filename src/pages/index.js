@@ -8,10 +8,12 @@ import Offer from '../components/Offer'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import Preloader from '../components/Preloader'
 
 const Home = () => {
     return (
         <>
+            <Preloader />
             <Nav />
             <Hero />
             <About />
