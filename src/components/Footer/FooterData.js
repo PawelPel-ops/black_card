@@ -1,6 +1,5 @@
 import { FaFacebook } from 'react-icons/fa'
 import { AiFillPhone, AiFillYoutube } from 'react-icons/ai'
-import { IoTimeOutline } from 'react-icons/io5'
 import { IoIosMail } from 'react-icons/io'
 
 export const footer_data = 

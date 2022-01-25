@@ -56,7 +56,7 @@ const Info = () => {
                                             to='contact' 
                                             smooth={true} 
                                             duration={500} 
-                                            spy='true' 
+                                            spy={true}
                                             exact='true' 
                                             offset={-58}
                                         >Contact Us</LinkScroll>

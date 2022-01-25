@@ -51,7 +51,7 @@ const Nav = () => {
                                         to='offer' 
                                         smooth={true} 
                                         duration={500} 
-                                        spy='true' 
+                                        spy={true}
                                         exact='true' 
                                         offset={-58}
                                     >Offer</LinkScroll>
@@ -61,7 +61,7 @@ const Nav = () => {
                                         to='testimonials' 
                                         smooth={true} 
                                         duration={500} 
-                                        spy='true' 
+                                        spy={true}
                                         exact='true' 
                                         offset={-58}
                                     >Testimonials</LinkScroll>
@@ -71,7 +71,7 @@ const Nav = () => {
                                         to='contact' 
                                         smooth={true} 
                                         duration={500} 
-                                        spy='true' 
+                                        spy={true}
                                         exact='true' 
                                         offset={-58}
                                     >Contact</LinkScroll>

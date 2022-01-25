@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { IconContext } from "react-icons";
 import { footer_data } from './FooterData';
 import {
@@ -27,7 +27,6 @@ import {
 } from './FooterE'
 
 const Footer = () => {
-    // const MediaData = footer_data.media_data;
 
     return (
         <FooterSection>
